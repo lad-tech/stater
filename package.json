@@ -1,6 +1,6 @@
 {
   "name": "@lad-tech/stater",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Менеджер состояний",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
