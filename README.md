@@ -1,3 +1,6 @@
+[![Coverage Status](https://coveralls.io/repos/github/lad-tech/stater/badge.svg?branch=main)](https://coveralls.io/github/lad-tech/stater?branch=main)
+[![Known Vulnerabilities](https://snyk.io/test/github/lad-tech/stater/badge.svg)](https://snyk.io/test/github/stater/nsc-toolkit)
+
 # stater - Менеджер состояния
 
 ## Что умеет
