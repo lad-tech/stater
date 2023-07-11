@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/be-true/stater.git"
+    "url": "git+https://github.com/lad-tech/stater.git"
   },
   "keywords": [
     "state",
@@ -28,9 +28,9 @@
   "author": "eawapownikov@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/be-true/stater/issues"
+    "url": "https://github.com/lad-tech/stater/issues"
   },
-  "homepage": "https://github.com/be-true/stater#readme",
+  "homepage": "https://github.com/lad-tech/stater#readme",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/npm": "^9.0.1",
