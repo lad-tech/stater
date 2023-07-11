@@ -3,9 +3,14 @@ node_modules
 *.log
 .DS_Store
 
+
 # other
 tests
 src
 docs
 jest.config.ts
 tsconfig.json
+.github
+.releaserc
+a.out
+coverage

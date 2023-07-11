@@ -4,6 +4,7 @@
   "description": "Менеджер состояний",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "private": false,
   "directories": {
     "doc": "docs",
     "src": "src",
