@@ -12,12 +12,14 @@ import {
   TOnChangeField,
   TOnChangeProperties,
   TSettings,
+  TSortArg,
   TStateListIterParams,
   TStateListOrRaw,
   TStateOrRaw,
   TSubscribe,
   TSubscribeSwitchParams,
 } from "./types";
+import { makeSortCallback } from "./functions/makeSortCallback";
 
 export const stateList = <Type>(
   data: TStateListOrRaw<Type>
@@ -258,6 +260,12 @@ export const StateList: IStateListProto = class IStateListClass<Type>
     for (const state of this.iter(params)) {
       if (callback(state)) return state;
     }
+  }
+
+  sort(arg: TSortArg<Type, keyof Type>): this {
+    const callback = makeSortCallback(arg);
+    this.list.sort(callback);
+    return this;
   }
 
   subList(

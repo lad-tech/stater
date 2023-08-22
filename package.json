@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "private": false,
   "publishConfig": {
-  "access": "public",
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "directories": {

@@ -131,6 +131,8 @@ export interface IStateList<Type> {
     arg: TCallback<Type>,
     params?: TStateListIterParams
   ): IState<Type> | undefined;
+  /** Сортировка */
+  sort(fn: TSortArg<Type, keyof Type>): this;
   /** Фильтрация списка */
   filter(arg: TCallback<Type>, params?: TStateListIterParams): IState<Type>[];
   /** Возвращает подмножество связанное с основным */
@@ -179,6 +181,8 @@ export type TMapCallback<Type, R> = (
   index?: number,
   array?: IStateList<Type>
 ) => R;
+export type TSortCallback<Type> = (a: IState<Type>, b: IState<Type>) => number;
+export type TSortArg<Type, F extends keyof Type> = TSortCallback<Type> | F;
 
 /** Изменение */
 export type TChange<Type> = {
