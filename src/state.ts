@@ -285,7 +285,7 @@ export const State: IStateProto = class StateClass<Type>
   hasChanges<F extends keyof Type>(fields?: F[]): boolean {
     let changed = this.changed;
     for (const field of fields ?? []) {
-      if (!this.old[field] || this.data[field] === this.old[field])
+      if (this.old[field] === undefined || this.data[field] === this.old[field])
         changed = false;
     }
     // Если нет ни одного признака по изменению, то нет изменения

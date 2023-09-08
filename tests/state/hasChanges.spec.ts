@@ -22,4 +22,14 @@ describe("State.hasChanges()", () => {
     const has = state.hasChanges();
     expect(has).toEqual(true);
   });
+
+  it("Если параметр сначала был null", () => {
+    const data: { name: string | null } = { name: null };
+    const state = new State<typeof data>(data)
+        .source("any_source")
+        .actions("update");
+    state.set("name", "Victoria");
+    const hasName = state.hasChanges(["name"]);
+    expect(hasName).toEqual(true);
+  });
 });
